@@ -1,0 +1,32 @@
+# training hyperparameters
+# Training hyperparameters for YOLO11 ECG detection
+
+# Model
+model: yolo11s.pt        # base model (n/s/m/l/x)
+
+# Data
+data: config/data.yaml   # path to dataset config
+imgsz: 960               # image size
+batch: 16                # batch size
+epochs: 100              # training epochs
+patience: 50             # early stopping patience
+
+# Optimization
+optimizer: AdamW         # SGD | Adam | AdamW
+lr0: 0.01                # initial learning rate
+lrf: 0.01                # final learning rate fraction
+
+# Augmentation
+mosaic: 1.0
+mixup: 0.2
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 10
+translate: 0.1
+scale: 0.5
+shear: 2.0
+
+# Project
+project: runs/train
+name: exp_ecg

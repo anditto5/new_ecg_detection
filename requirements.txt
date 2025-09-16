@@ -1,0 +1,7 @@
+ultralytics
+streamlit
+gradio
+fastapi
+opencv-python
+pillow
+pyyaml

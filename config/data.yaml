@@ -1,0 +1,10 @@
+# YOLO dataset config (train/val paths, classes)
+# ECG Dataset Configuration for YOLO11
+path: ./custom_data/data_ecg   # dataset root path
+
+train: train/images            # training images
+val: val/images                # validation images
+test: test/images              # optional test images
+
+nc: 2                          # number of classes
+names: ['abnormal', 'normal']  # class names
